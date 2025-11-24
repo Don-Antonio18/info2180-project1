@@ -1,11 +1,176 @@
 /* Add your CSS to this file */
+@import url("https://fonts.googleapis.com/css?family=Titan+One&display=swap");
+
+:root {
+	--black: #1a202c;
+	--lightGrey: #edf2f7;
+	--grey: #cbd5e0;
+	--coral: #bd4654;
+	--lighterBlue: #32abe1;
+	--lightBlue: #3182ce;
+	--green: #42b883;
+	--defaultFontFamily: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+		Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+}
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
-
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+
+
+
+/*  -- HEADER SECTION --  */
+header {
+    background-color: white;
+    font-size: 18px;
+}
+header h1 {
+    text-align: left;
+    margin: 0;
+}
+header nav ul {
+    text-align: right;
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+header nav a {
+    color: #6b7280;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #5A67D8;
+}
+
+/* -- HERO OVERVIEW SECTION --  */
+.overview-hero .container {
+    background-color: #E2E8F0;
+}
+.overview-hero {
+background-color: #E2E8F0;
+}
+.overview-hero-image {
+    flex: 0 0  auto;
+}
+.overview-hero-image img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    padding: 40px;
+}
+.overview-hero-text {
+    flex: 1;
+}
+
+
+/* -- LEARN ABOUT SECTION --  */
+.learn-about h2 {
+    font-size: 24px;
+    color:#48bb78;
+}
+.learn-about .cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin: 20px auto 0;
+}
+.learn-about .card {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	border: 1px solid #e2e8f0;
+	border-radius: 5px;
+	box-shadow: 0 2px 6px var(--grey);
+}
+.learn-about .card img {
+	max-width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.learn-about .card-body p {
+	flex-grow: 1;
+	padding: 1em;
+}
+.learn-about .card h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+/* -- COVID SECTION -- */
+.testing {
+    background-color: #4A5568;
+    color: white;
+}
+/* Learn more link background */
+.testing .cta{
+    background-color: #48bb78;
+    border-radius: 5px;
+}
+.testing-description {
+	text-align: left;
+}
+.cta {
+	text-align: right;
+}
+
+/* -- RECENT STORIES SECTION --  */
+
+.stories article {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 30px;
+	align-items: flex-start;
+}
+.stories article img {
+	max-width: 150px;
+	height: auto;
+	display: block;
+	flex-shrink: 0;
+}
+.stories .article-body {
+	flex: 1;
+}
+
+/* -- NEWSLETTER SECTION -- */
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+}
+.newsletter button {
+    background-color: #5A67D8;
+}
+.newsletter .container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+.newsletter form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+/* -- FOOTER SECTION --  */
+.footer {
+    background-color: #4A5568;
+    color: white;
 }
